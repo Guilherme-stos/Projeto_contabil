@@ -30,8 +30,31 @@
             <div class="toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
+
+            <div class="dropdown_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Soluções</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contato</a></li>
+            </div>
         </div>
     </header>
+
+    <script>
+        let toggle_btn = document.querySelector('.toggle')
+        let toggle_btn_icon = document.querySelector('.toggle i')
+        let dropdown_menu = document.querySelector('.dropdown_menu')
+
+        toggle_btn.onclick = function () {
+            dropdown_menu.classList.toggle('open')
+            let isOpen = dropdown_menu.classList.contains('open')
+
+            toggle_btn_icon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+     </script>
 
 </body>
 
