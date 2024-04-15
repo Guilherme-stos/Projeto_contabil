@@ -71,7 +71,12 @@ header {
     margin-right: 2em;
 }
 
-
+.menu_item > a:hover {
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
 
 /*Dropdown*/
 .dropdown_menu {
@@ -80,7 +85,7 @@ header {
     right: 2rem;
     top: 60px;
     height: 0px;
-    width: 300px;
+    width: 200px;
     background-color: rgba(46, 43, 43, 0.486);
     backdrop-filter: blur(15px);
     border-radius: 15px;
