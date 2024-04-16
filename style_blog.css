@@ -31,7 +31,6 @@ header {
 .logo {
     display: flex;
     align-items: center;
-
 }
 
 .navbar .logo a {
@@ -51,16 +50,11 @@ header {
     justify-content: space-around;
     background-color: rgb(3, 102, 168);
     font-weight: bold;
-}
-
-.navbar .logo a {
-    font-size: 1.5rem;
-    font-size: bold;
+    gap: 2rem;
 }
 
 .menu {
     display: flex;
-    gap: 3.5rem;
     padding: 0 2rem;
     align-items: center;
 
@@ -79,6 +73,7 @@ header {
     display: none;
     color: white;
     margin-top: 20px;
+    padding: 0px 1rem;
 }
 
 /*Dropdown*/
@@ -90,6 +85,7 @@ header {
     height: 0px;
     width: 200px;
     border-radius: 15px;
+    background-color: rgb(3, 102, 168);
     margin-top: 3px;
 }
 
