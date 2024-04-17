@@ -99,7 +99,38 @@ header {
     justify-content: center;
 }
 
+.img_container {
+
+}
+
+.img_blog {
+    background-image: url(Imagens/glenn-carstens-mini.jpg);
+    height: 426px;
+    background-size: contain;
+}
+
+.blog_container {
+    background-color: rgb(3, 102, 168);
+    margin: 0px 10rem;
+    height: auto;
+}
+.blog_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+.blog_item {
+    margin: 10px 3rem;
+}
+
 /*Responsivo*/
+
+@media (max-width: 1050px) {
+    .blog_container .blog_item {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 @media (max-width: 768px) {
     .navbar .menu {
