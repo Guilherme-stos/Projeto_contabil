@@ -48,7 +48,8 @@ header {
     height: 60px;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(3, 102, 168);
+    /* background-color: rgb(3, 102, 168); */
+    background-image: linear-gradient(to bottom,  #031533,#132950,#314C7A);
     font-weight: bold;
     gap: 2rem;
 }
@@ -112,7 +113,8 @@ header {
     width: 65vw;
 }
 .blog_container {
-    background-color: rgb(3, 102, 168);
+    /* background-color: rgb(3, 102, 168); */
+    background-image: linear-gradient(to bottom, #314C7A, #132950,#031533);
     height: auto;
 }
 
@@ -120,17 +122,22 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    min-width: 350px;
+
 }
 .blog_item {
-    margin: 10px 15rem;
+    margin: 25px auto; /*Cards ficaram responsivos*/
+
 }
 .card {
-    width: 30rem;
+    width: 20rem;
+
 }
 
 /*Paginas*/
 .container_conteudo {
     background-color: rgb(3, 102, 168);
+
 }
 .container_conteudo > h2 {
     padding: 4rem;
