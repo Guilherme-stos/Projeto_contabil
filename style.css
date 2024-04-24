@@ -77,6 +77,10 @@ header {
     padding: 5px;
     border-radius: 10px;
 }
+.container_sobre {
+    background-color: rgba(255, 255, 255, 0.473);
+    margin: 0px 2rem;
+}
 
 /*Dropdown*/
 .dropdown_menu {

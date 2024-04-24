@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/icon.png" type="image/x-icon">
+    <title>Site Contábil</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Imagens/icons-ideia-100.png" alt="Logo" class="logo_empresa">
+
+                <a href="#"> Escritório Contabil</a>
+            </div>
+            <ul class="menu">
+                <li class="menu_item"><a href="index.html">Home</a></li>
+                <li class="menu_item"><a href="#">Sobre</a></li>
+                <li class="menu_item"><a href="#">Soluções</a></li>
+                <li class="menu_item"><a href="blog.html">Blog</a></li>
+                <li class="menu_item"><a href="#">Contato</a></li>
+            </ul>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="dropdown_menu">
+                <li class="menu_item"><a href="#">Home</a></li>
+                <li class="menu_item"><a href="#">Sobre</a></li>
+                <li class="menu_item"><a href="#">Soluções</a></li>
+                <li class="menu_item"><a href="#">Blog</a></li>
+                <li class="menu_item"><a href="#">Contato</a></li>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container_sobre">
+            <div>
+                <h1>Sobre a Empresa</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod possimus beatae quos eaque saepe
+                    aperiam non ipsam, ex quia temporibus necessitatibus optio odio itaque? Pariatur totam itaque
+                    nesciunt vel eos dolores autem? Omnis numquam reprehenderit praesentium sapiente nostrum magnam
+                    beatae delectus non. Recusandae aliquam consequuntur temporibus quod quaerat sit est?</p>
+            </div>
+            <div>
+                <h2>Missão</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem rem fugit quas explicabo
+                    veritatis eum, facere, amet totam praesentium sunt modi illum asperiores natus accusantium
+                    temporibus eaque ipsum. Autem molestiae fugiat commodi illo magnam quis rem eum ducimus saepe
+                    voluptas deserunt, suscipit recusandae vero quaerat! Rem porro impedit aliquam laudantium?</p>
+                <h2>Visão</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a deleniti voluptatum minima
+                    commodi optio repudiandae enim illum fuga. A, possimus alias! Voluptatem, rem. Qui, quidem mollitia.
+                    Id, ex facilis? Molestiae obcaecati tempora dolorem, quibusdam natus cum placeat mollitia, modi,
+                    similique voluptate expedita doloremque quidem officia laborum consequuntur necessitatibus
+                    provident!</p>
+                <h2>Valores</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In fugiat temporibus sequi repudiandae,
+                    enim praesentium asperiores non repellendus deserunt amet. Tenetur qui culpa placeat velit,
+                    assumenda modi dolores laboriosam quibusdam maxime libero in odio harum enim veniam architecto
+                    dolor. Eveniet repellendus maiores illo provident totam mollitia laborum numquam repellat est!</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let toggle_btn = document.querySelector('.toggle')
+        let toggle_btn_icon = document.querySelector('.toggle i')
+        let dropdown_menu = document.querySelector('.dropdown_menu')
+
+        toggle_btn.onclick = function () {
+            dropdown_menu.classList.toggle('open')
+            let isOpen = dropdown_menu.classList.contains('open')
+
+            toggle_btn_icon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+</body>
+
+</html>
